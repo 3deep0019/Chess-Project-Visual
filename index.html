@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game Visual</title>
+    <style>
+        p {
+            margin: 30px;
+        }
+
+        span {
+            margin: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Instructions:- How to move queen from it's initial position</h1>
+        <h3>In the input box the text will be (S3)</h3>
+        <h2>S means South</h2>
+        <h2>3 means number of steps</h2>
+        <h2>Number should from 1 to 7 other than this number you will get an Error</h2>
+        <ul>
+            <li>N = North</li>
+            <li>S = South</li>
+            <li>E = East</li>
+            <li>W = West</li>
+            <li>NE = NorthEast</li>
+            <li>NW = NotherWest</li>
+            <li>SE = SouthEast</li>
+            <li>SW = SouthWest</li>
+        </ul>
+    </div>
+    <input id="position" type="text">
+    <button onclick="play()">Go</button>
+    <!-- making 8X8 chess board where initial position of queen
+    is highlighted -->
+    <div>
+        <p> <span id="00">a8</span>
+            <span id="01">b8</span>
+            <span id="02">c8</span>
+            <span id="03">d8</span>
+            <span id="04">e8</span>
+            <span id="05">f8</span>
+            <span id="06">g8</span>
+            <span id="07">h8</span> </p>
+
+        <p> <span id="10">a7</span>
+            <span id="11">b7</span>
+            <span id="12">c7</span>
+            <span id="13">d7</span>
+            <span id="14">e7</span>
+            <span id="15">f7</span>
+            <span id="16">g7</span>
+            <span id="17">h7</span> </p>
+
+        <p> <span id="20">a6</span>
+            <span id="21">b6</span>
+            <span id="22">c6</span>
+            <span id="23">d6</span>
+            <span id="24">e6</span>
+            <span id="25">f6</span>
+            <span id="26">g6</span>
+            <span id="27">h6</span> </p>
+
+        <p> <span id="30">a5</span>
+            <span id="31">b5</span>
+            <span id="32">c5</span>
+            <span id="33">d5</span>
+            <span id="34">e5</span>
+            <span id="35">f5</span>
+            <span id="36">g5</span>
+            <span id="37">h5</span> </p>
+
+        <p> <span id="40">a4</span>
+            <span id="41">b4</span>
+            <span id="42">c4</span>
+            <span id="43">d4</span>
+            <span id="44">e4</span>
+            <span id="45">f4</span>
+            <span id="46">g4</span>
+            <span id="47">h4</span> </p>
+
+        <p> <span id="50">a3</span>
+            <span id="51">b3</span>
+            <span id="52">c3</span>
+            <span id="53">d3</span>
+            <span id="54">e3</span>
+            <span id="55">f3</span>
+            <span id="56">g3</span>
+            <span id="57">h3</span> </p>
+
+        <p> <span id="60">a2</span>
+            <span id="61">b2</span>
+            <span id="62">c2</span>
+            <span id="63">d2</span>
+            <span id="64">e2</span>
+            <span id="65">f2</span>
+            <span id="66">g2</span>
+            <span id="67">h2</span> </p>
+
+        <p> <span id="70">a1</span>
+            <span id="71">b1</span>
+            <span id="72">c1</span>
+            <span id="73">d1</span>
+            <span id="74">e1</span>
+            <span id="75">f1</span>
+            <span id="76">g1</span>
+            <span id="77">h1</span> </p>
+    </div>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
